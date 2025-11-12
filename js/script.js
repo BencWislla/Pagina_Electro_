@@ -1,11 +1,10 @@
-// Esperar a que todo el contenido del DOM esté cargado antes de ejecutar cualquier código
 document.addEventListener('DOMContentLoaded', () => {
 
   //** NAV - Evento en el botón "Solicitar un servicio" para ir a la página de presupuesto */
   const btnServicio = document.querySelector('.btn-servicio');
   if (btnServicio) {
     btnServicio.addEventListener('click', () => {
-      window.location.href = "/views/presupuesto.html";
+      window.location.href = "../views/presupuesto.html";
     });
   }
 
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnContacto = document.querySelector('.btn-contacto');
   if (btnContacto) {
     btnContacto.addEventListener('click', () => {
-      window.location.href = "/views/contacto.html";
+      window.location.href = "../views/contacto.html";
     });
   }
 
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnVerMas = document.querySelector('.btn-vermas');
   if (btnVerMas) {
     btnVerMas.addEventListener('click', () => {
-      window.location.href = "/views/galeria.html";
+      window.location.href = "../views/galeria.html";
     });
   }
 
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let grupoAtual = 0;        // Grupo actual que se muestra
 
   //** Fetch del archivo JSON con los comentarios */
-  fetch("/js/json/commit.json")
+  fetch("../js/json/commit.json")
     .then(response => response.json())
     .then(comentarios => {
       comentariosData = comentarios;
@@ -59,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
       containerComentario.appendChild(card);
     });
 
-    totalGrupos = Math.ceil(commit.length / POR_GRUPO); // Calcular número de grupos
-    mostrarGrupo(); // Mostrar el grupo inicial
+    totalGrupos = Math.ceil(commit.length / POR_GRUPO);
+    mostrarGrupo();
   }
 
   /** Función para mostrar solo el grupo actual de comentarios */
