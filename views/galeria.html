@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Wislla">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="../assents/icon/healthicons_electricity.png" type="image/png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Galeria</title>
+
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <div class="navbar-principal">
+      <div class="navbar-principal__logo">
+        <img src="../assents/icon/healthicons_electricity.png" alt="icon logo electro" width="40" height="40">
+        <h1>Electro</h1>
+      </div>
+      <div class="navbar-principal__contacto">
+        <div class="telefono-nav">
+          <img src="../assents/icon/mobile_3_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt="telefono icon" width="40"
+            height="40">
+          <div class="telefono-nav__info">
+            <p>Contacto 24h</p>
+            <p class="telefono-nav__numero">+34612346789</p>
+          </div>
+        </div>
+        <div class="servicio-btn">
+          <button class="btn-servicio">Solicitar un servicio</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar-secundario">
+      <div class="navbar-secundario__links">
+        <a href="../index.html">Inicio</a>
+        <a href="galeria.html">Portfolio</a>
+        <a href="presupuesto.html">Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="navbar-secundario__busqueda">
+        <a href="#">
+          <img src="../assents/icon/search-svgrepo-com(2).svg" alt="icon Busca" width="40" height="40"
+            class="icono-busqueda"></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!--SECCION SOBRE LA EMPRESA-->
+    <section class="seccion_sobreNosotros">
+      <div class="titulo_sobreNosotros">
+        <h2>QUIÉNES SOMOS</h2>
+      </div>
+      <div class="contenido_sobreNosotros">
+        <img src="../assents/imagen/imgElectro.jpeg" alt="trabajadores electricistas" width="600" height="680">
+        <div class="texto_SobreNostros">
+          <h2>Bienvenido a Electro</h2>
+          <p>
+            Con más de 20 años de experiencia en el sector eléctrico, en <strong class="resaltado">ELECTRO</strong>
+            ofrecemos soluciones
+            integrales y eficientes para empresas, industrias y comercios en toda España, con la sede de la empresa en
+            Madrid.<br>
+            Combinamos tecnología, innovación y compromiso para garantizar instalaciones seguras y resultados
+            duraderos.<br>
+            Nuestro equipo altamente cualificado trabaja cada día para brindar un servicio cercano, profesional y
+            adaptado a las necesidades de cada cliente, disponible <br> <strong class="resaltado">24 horas al
+              día</strong>.<br>
+            Nos destacamos por la calidad, la rapidez y la confianza, llevando energía donde más la necesitas con la
+            garantía de un trabajo bien hecho desde el primer momento.<br>
+            A lo largo de nuestra trayectoria, hemos participado en diversos proyectos, modernizando sistemas
+            eléctricos, optimizando consumos y aplicando las últimas normativas de seguridad, siempre con el objetivo de
+            mejorar la eficiencia y sostenibilidad de nuestros clientes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION GALERIA: con jquery -->
+    <section class="galeria-principal">
+      <div>
+        <h2>Nuestros Trabajos</h2>
+      </div>
+      <div class="galeria_trabajo">
+        <div class="item-galeria" data-antes="../assents/imagen/img2.jpeg" data-despues="../assents/imagen/img1.jpeg">
+          <img src="../assents/imagen/img1.jpeg" alt="Industrial: Resultado" width="300" height="200">
+          <p class="estado-imagen">Después</p>
+        </div>
+
+        <div class="item-galeria" data-antes="../assents/imagen/img3.jpeg" data-despues="../assents/imagen/img4.jpeg">
+          <img src="../assents/imagen/img4.jpeg" alt="Comercial: Resultado" width="300" height="200">
+          <p class="estado-imagen">Después</p>
+        </div>
+
+        <div class="item-galeria" data-antes="../assents/imagen/img5.jpeg" data-despues="../assents/imagen/img6.jpeg">
+          <img src="../assents/imagen/img6.jpeg" alt="Comercial: Resultado" width="300" height="200">
+          <p class="estado-imagen">Después</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN BENEFICIOS -->
+    <section class="seccion_beneficios">
+      <div class="beneficio">
+        <img src="../assents/icon/icon001.png" alt="icono de mensaje" width="60" height="60">
+        <h3>Presupuesto Gratuito</h3>
+        <p>Solicita tu presupuesto sin compromiso.<br> Evaluamos tus necesidades y te ofrecemos la mejor solución al
+          mejor
+          precio.</p>
+      </div>
+      <div class="beneficio">
+        <img src="../assents/icon/icon002.png" alt="ícono de reloj" width="60" height="60">
+        <h3>Disponible 24/7</h3>
+        <p>Estamos disponibles las 24 horas del día, los 7 días de la semana, para atender emergencias eléctricas en
+          cualquier momento.</p>
+      </div>
+      <div class="beneficio">
+        <img src="../assents/icon/icon003.png" alt="icono de cartera" width="60" height="60">
+        <h3>Precios Asequibles</h3>
+        <p>Ofrecemos servicios de alta calidad a precios competitivos, garantizando el equilibrio perfecto entre coste y
+          eficiencia.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+
+    <!--Aviso Legal-->
+    <div class="footer-container">
+      <div class="footer-legal">
+        <p><a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a> <br> ©
+          2025 ELECTRO Todos los derechos reservados.</p>
+      </div>
+
+      <!-- Informações da Empresa -->
+      <div class="footer-info">
+        <div class="pie-pagina__logo">
+          <img src="../assents/icon/Group(2).png" alt="icon" width="18" height="18">
+          <h3>ELECTRO S.L.</h3>
+        </div>
+        <p>Calle Energía 45, Madrid, España</p>
+        <p>Email: contacto@electro.es</p>
+        <p>Tel: +34 612 346 789</p>
+      </div>
+
+      <!--Links redes sociales-->
+      <div class="footer-redes">
+        <a href="#" target="_blank"><img src="../assents/icon/Vector.png" alt="Google"></a>
+        <a href="#" target="_blank"><img src="../assents/icon/Vector(1).png" alt="Instagram"></a>
+        <a href="#" target="_blank"><img src="../assents/icon/Vector(2).png" alt="Twitter"></a>
+        <a href="#" target="_blank"><img src="../assents/icon/Vector(3).png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!--JAVASCRIPT: jQuery (base), funciones generales y galería -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/scriptGaleria.js"></script>
+</body>
+
+</html>

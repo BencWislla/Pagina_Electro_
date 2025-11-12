@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Wislla">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="./assents/icon/healthicons_electricity.png" type="image/png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Electro</title>
+</head>
+
+
+<body>
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <div class="navbar-principal">
+      <div class="navbar-principal__logo">
+        <img src="./assents/icon/healthicons_electricity.png" alt="icon logo electro" width="40" height="40">
+        <h1>Electro</h1>
+      </div>
+      <div class="navbar-principal__contacto">
+        <div class="telefono-nav">
+          <img src="./assents/icon/mobile_3_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt="telefono icon" width="40"
+            height="40">
+          <div class="telefono-nav__info">
+            <p>Contacto 24h</p>
+            <p class="telefono-nav__numero">+34612346789</p>
+          </div>
+        </div>
+        <div class="servicio-btn">
+          <button class="btn-servicio">Solicitar un servicio</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar-secundario">
+      <div class="navbar-secundario__links">
+        <a href="index.html">Inicio</a>
+        <a href="./views/galeria.html">Portfolio</a>
+        <a href="./views/galeria.html">Presupuesto</a>
+        <a href="./views/contacto.html">Contacto</a>
+      </div>
+      <div class="navbar-secundario__busqueda">
+        <a href="#">
+          <img src="./assents/icon/search-svgrepo-com(2).svg" alt="icon Busca" width="40" height="40"
+            class="icono-busqueda"></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- SECCIÓN PRINCIPAL -->
+    <section class="seccion-principal">
+      <div class="overlay-principal">
+        <div class="overlay-texto">
+          <h2>Tu energía, nuestra responsabilidad.</h2>
+          <p>En <strong>ELECTRO</strong>, ofrecemos servicios eléctricos de calidad en toda España, con la confianza que
+            mereces.</p>
+        </div>
+        <div class="overlay-boton">
+          <button class="btn-contacto">Contáctanos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN QUIÉNES SOMOS -->
+    <section class="seccion-quienes-somos">
+      <div class="quienes-somos__texto">
+        <h2>SOMOS ELECTRO</h2>
+        <p>Con más de 20 años de experiencia en el sector eléctrico, brindamos soluciones eficientes e innovadoras para
+          negocios e industrias.<br>En <strong>ELECTRO</strong>, combinamos tecnología, eficiencia y confianza para
+          llevar energía donde más la necesitas.</p>
+        <div class="quienes-somos__boton">
+          <button class="btn-vermas">Ver más...</button>
+        </div>
+      </div>
+      <div class="quienes-somos__imagen">
+        <img src="./assents/imagen/trabajador.png" alt="electricista en las alturas" width="300" height="300">
+      </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="seccion-servicios">
+      <h2>Servicios Profesionales</h2>
+      <div class="servicios__contenedor">
+        <!-- Comercial -->
+        <a href="./views/presupuesto.html" class="servicio_comercial">
+          <div class="texto-servicio">
+            <img src="./assents/icon/domain_24dp_FFE248_FILL0_wght400_GRAD0_opsz24.svg" class="icono"
+              alt="Icone Comercial" width="40" height="40">
+            <p>COMERCIAL</p>
+          </div>
+        </a>
+        <!-- Industrial -->
+        <a href="./views/presupuesto.html" class="servicio_industrial">
+          <div class="texto-servicio">
+            <img src="./assents/icon/factory_24dp_FFE248_FILL0_wght400_GRAD0_opsz24.svg" class="icono"
+              alt="Icone Industrial" width="40" height="40">
+            <p>INDUSTRIAL</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCIÓN COMENTARIOS -->
+    <section class="seccion-comentarios">
+      <h2>Opiniones de nuestros clientes</h2>
+      <div class="contenido-comentario">
+        <button id="prevBtn">&#171;</button>
+        <div id="comentariosContainer"></div>
+        <button id="nextBtn">&#187;</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+    <!--Aviso Legal-->
+    <div class="footer-container">
+      <div class="footer-legal">
+        <p><a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a> <br> ©
+          2025 ELECTRO Todos los derechos reservados.</p>
+      </div>
+
+      <!-- Informações da Empresa -->
+      <div class="footer-info">
+        <div class="pie-pagina__logo">
+          <img src="./assents/icon/Group(2).png" alt="icon" width="18" height="18">
+          <h3>ELECTRO S.L.</h3>
+        </div>
+        <p>Calle Energía 45, Madrid, España</p>
+        <p>Email: contacto@electro.es</p>
+        <p>Tel: +34 612 346 789</p>
+      </div>
+
+      <!--Links redes sociales-->
+      <div class="footer-redes">
+        <a href="#" target="_blank"><img src="./assents/icon/Vector.png" alt="Google"></a>
+        <a href="#" target="_blank"><img src="./assents/icon/Vector(1).png" alt="Instagram"></a>
+        <a href="#" target="_blank"><img src="./assents/icon/Vector(2).png" alt="Twitter"></a>
+        <a href="#" target="_blank"><img src="./assents/icon/Vector(3).png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!--JAVASCRIPT-->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
