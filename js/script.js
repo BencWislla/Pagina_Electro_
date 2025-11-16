@@ -4,7 +4,7 @@
 const btnServicio = document.querySelector('.btn-servicio');
 if (btnServicio) {
   btnServicio.addEventListener('click', () => {
-    window.location.href = "../views/presupuesto.html";
+    window.location.href = "https://bencwislla.github.io/Pagina_Electro_/views/presupuesto.html";
   });
 }
 
@@ -12,7 +12,7 @@ if (btnServicio) {
 const btnContacto = document.querySelector('.btn-contacto');
 if (btnContacto) {
   btnContacto.addEventListener('click', () => {
-    window.location.href = "../views/contacto.html";
+    window.location.href = "https://bencwislla.github.io/Pagina_Electro_/views/contacto.html";
   });
 }
 
@@ -20,7 +20,7 @@ if (btnContacto) {
 const btnVerMas = document.querySelector('.btn-vermas');
 if (btnVerMas) {
   btnVerMas.addEventListener('click', () => {
-    window.location.href = "../views/galeria.html";
+    window.location.href = "https://bencwislla.github.io/Pagina_Electro_/views/galeria.html";
   });
 }
 
@@ -36,7 +36,7 @@ const POR_GRUPO = 3;       // Número de comentarios a mostrar por grupo
 let grupoAtual = 0;        // Grupo actual que se muestra
 
 //** Fetch del archivo JSON con los comentarios */
-fetch("../js/json/commit.json")
+fetch("https://bencwislla.github.io/Pagina_Electro_/js/json/commit.json")
   .then(response => response.json())
   .then(comentarios => {
     comentariosData = comentarios;
