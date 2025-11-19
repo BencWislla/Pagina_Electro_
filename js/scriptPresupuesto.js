@@ -1,11 +1,6 @@
 //** Presupuesto.html */
 
-// Formulario
-
-/*
-  Esta función inicializa el formulario de presupuesto.
-  Se ejecuta cuando el documento ha cargado completamente.
-*/
+// Inicializa el formulario de presupuesto
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("formPresupuesto")

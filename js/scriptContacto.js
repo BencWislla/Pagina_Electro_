@@ -59,7 +59,7 @@ formulario.addEventListener("submit", async (e) => {
       routeWhileDragging: false,
       language: "es",
       createMarker: function () {
-        return null // No crear marcadores adicionales
+        return null
       },
     }).addTo(mapa)
 
@@ -78,7 +78,7 @@ window.addEventListener("resize", function () {
 
 
 
-// ENVIO Formulario
+// ENVIO Formulario en Session Storge
 
 const form = document.getElementById("formContacto")
 
@@ -104,14 +104,13 @@ form.addEventListener("submit", function (e) {
   // Recupera la lista existente del sessionStorage
   let envios = JSON.parse(sessionStorage.getItem("formularioContacto")) || []
 
-  // Agrega el nuevo envío
   envios.push(formularioData)
 
   // Guarda de nuevo en sessionStorage
   sessionStorage.setItem("formularioContacto", JSON.stringify(envios))
 
   // Alerta de confirmación
-  alert("¡Formulario enviado con éxito! Sus datos fueron guardados localmente.")
+  alert("¡Formulario enviado con éxito! Sus datos fueron guardados en Session Storage.")
 
   form.reset()
 })

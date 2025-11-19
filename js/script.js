@@ -1,5 +1,3 @@
-
-
 //** NAV - Evento en el botón "Solicitar un servicio" para ir a la página de presupuesto */
 const btnServicio = document.querySelector('.btn-servicio');
 if (btnServicio) {
